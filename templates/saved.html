@@ -1,0 +1,40 @@
+<html>
+   <body>
+   
+      {% if saved %}
+         <strong>Your profile was saved.</strong>
+         <!-- <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>test</title>
+          </head> -->
+          <!-- <body> -->
+         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+         {% autoescape off %}
+         {{ plot_html }}
+         {% endautoescape %}
+         
+          <!-- </body> -->
+         
+
+      {% endif %}
+      
+      {% if not saved %}
+         <strong>
+            {{ message }}
+         </strong>
+      {% endif %}
+
+      
+      
+      <form action="{% url "uploadppg" %}">
+         <div style = "max-width:470px;">
+            <center> 
+               <button type = "submit" value = "back" >
+                  <strong>Back</strong>
+               </button>
+            </center>
+         </div>
+     </form>
+   </body>
+</html>
