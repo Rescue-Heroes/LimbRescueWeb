@@ -1,9 +1,9 @@
 from plotly.offline import plot
 from django.shortcuts import render, redirect
 
-from limbrescueweb import models
-from limbrescueweb.forms import UserForm, RegisterForm, PPGForm
-from limbrescueweb.utils import plot
+from . import models
+from .forms import UserForm, RegisterForm, PPGForm
+from .utils import plot
 
 
 
