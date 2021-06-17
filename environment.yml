@@ -1,0 +1,10 @@
+name: LimbRescueWeb
+channels:
+  - defaults
+dependencies:
+  - numpy=1.20.3
+  - pip
+  - plotly=4.14.3
+  - python=3.8.10
+  - pip:
+    - django==3.2.4
