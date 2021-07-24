@@ -15,7 +15,7 @@ Develop a user friendly web application that allows patients/doctors to create a
 ## Application Components
 
 ### Database
-
+The database is managed by Django itself and within the file directory it is located in the settings.py file. Be sure to familiarize yourself with this SQL Database and understand that the users and adminds are independent of each other.
 
 ### Graph
 
@@ -38,10 +38,6 @@ Necessary packages to install before compilation: Plotly, Numpy, Django. These c
 
 To run the web application simply enter the command 'python manage.py runserver' within the terminal. Be sure to be in the project directory when running this command.
 
-#### Prerequisites
+#### ADMIN Login
 
-Installing the WearOS application is slightly more cumbersome. You'll need a few things:
-
-1. Android Studio downloaded to a computer (optionally you can just download `adb` although this is more advanced).
-2. A local router that doesn't block connecting to peers.
-3. The `wear-release.apk` file downloaded to your computer.
+How to access admin login of the web application:
