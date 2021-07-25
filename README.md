@@ -32,12 +32,16 @@ When an item is clicked, HistoryHolder create the DataAnalysisActivity and passe
 
 ## Installation
 
-Necessary packages to install before compilation: Plotly, Numpy, Django. These can all be successfully installed by using a package handler such as pip or conda. Be sure that your python version is up to date and compatible with the version of python Django is using. 
+Necessary packages to install before compilation: Plotly, Numpy, Django, Flask, Chatterbot. These can all be successfully installed by using a package handler such as pip or conda. Be sure that your python version is up to date and compatible with the version of python Django is using. 
 
 ### Web App
 
 To run the web application simply enter the command 'python manage.py runserver' within the terminal. Be sure to be in the project directory when running this command.
 
+#### Chatterbot
+To run the Chatterbot function, use pip install chatterbot, pip install Flask, and pip install chatterbot-corpus in the terminal. Run python app.py to activate the chat function.
+
 #### ADMIN Login
 
-How to access admin login of the web application:
+How to access admin login of the web application: 
+Run python manage.py createsuperuser. Go to http://127.0.0.1:8000/admin/, make sure you allready create the admin page.
