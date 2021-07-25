@@ -39,9 +39,9 @@ Necessary packages to install before compilation: Plotly, Numpy, Django, Flask, 
 To run the web application simply enter the command 'python manage.py runserver' within the terminal. Be sure to be in the project directory when running this command.
 
 #### Chatterbot
+
 To run the Chatterbot function, use pip install chatterbot, pip install Flask, and pip install chatterbot-corpus in the terminal. Run python app.py to activate the chat function.
 
 #### ADMIN Login
 
-How to access admin login of the web application: 
-Run python manage.py createsuperuser. Go to http://127.0.0.1:8000/admin/, make sure you allready create the admin page.
+How to access admin login of the web application: Run python manage.py createsuperuser. Go to http://127.0.0.1:8000/admin/, make sure you allready create the admin page.
