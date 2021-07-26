@@ -1,17 +1,17 @@
 # Project Limb Rescue Web Application
 
 Technical Team:
-Tai-Yu Pan
-Mengdi Fan
-Rithvich Ramesh
-Browy Li 
+Tai-Yu Pan (Worked on Plotly graph functionality)
+Mengdi Fan (Worked on Plotly graph functionality)
+Rithvich Ramesh (Worked on sitewide styling)
+Browy Li (Worked on user authentication and messaging system)
 
 Sponsors:
 Lynne Brophy, MSN, RN-BC, ARPN-CNS, AOCN
 Carlo Contreras, MD, FASC
 
 ## Project Mission
-Develop a user friendly web application that allows patients/doctors to create an account, upload data, and identify a diagnois.
+Develop a user friendly web application that allows patients/doctors to create an account, upload data, and identify a diagnois. The web application will facilitate a home based monitoring protocol for patients to monitor and track their lymphedema recordings.
 ## Application Components
 
 ### Database
