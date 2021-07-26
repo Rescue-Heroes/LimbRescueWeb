@@ -1,7 +1,7 @@
 # Project Limb Rescue Web Application
 
 Technical Team:
-Tai Yu Pan
+Tai-Yu Pan
 Mengdi Fan
 Rithvich Ramesh
 Browy Li 
