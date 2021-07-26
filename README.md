@@ -26,9 +26,7 @@ The application uses Plotly to graph data. The graph is shown after the user upl
 
 ### History Screen
 
-The history screen is composed of the HistoryFragment, which implements a RecyclerView. HistoryAdapter handles the display and reuse of items in the list. HistoryAdapter uses HistoryHolder to hold data for individual elements.
-When an item is clicked, HistoryHolder create the DataAnalysisActivity and passes it its session. This then graphs that particular session.
-
+TODO
 
 ## Installation
 
