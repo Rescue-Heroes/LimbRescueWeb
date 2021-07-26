@@ -42,4 +42,4 @@ To run the Chatterbot function, use pip install chatterbot, pip install Flask, a
 
 #### ADMIN Login
 
-How to access admin login of the web application: Run python manage.py createsuperuser. Go to http://127.0.0.1:8000/admin/, make sure you allready create the admin page.
+How to access admin login of the web application: Run python manage.py createsuperuser. Go to http://127.0.0.1:8000/admin/, make sure you already create the admin page.
