@@ -3,7 +3,8 @@ from plotly.offline import plot
 
 from . import models
 from .forms import PPGForm, RegisterForm, UserForm
-from .utils import plot
+from .ml import predict
+from .utils import plot2 as plot
 
 
 def index(request):
@@ -85,6 +86,7 @@ def SavePPG(request):
     saved = False
     message = ""
     plot_html = "abcde"
+    pred = -1
 
     if request.method == "POST":
         MyPPGForm = PPGForm(request.POST, request.FILES)
@@ -97,6 +99,7 @@ def SavePPG(request):
                 ppg.save()
                 saved = True
                 plot_html = plot(ppg.ppgdata.path)
+                pred = predict(ppg.ppgdata.path)
             else:
                 message = "Not .csv file. "
     else:

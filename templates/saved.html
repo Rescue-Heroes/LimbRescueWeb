@@ -1,46 +1,62 @@
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <title>PPG Plot</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   </head>
-   <body>
 
-      {% if saved %}
-         <strong>Your profile was saved.</strong>
-         <!-- <head>
+<head>
+   <meta charset="UTF-8">
+   <title>PPG Plot</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+   {% if saved %}
+   <p><strong>Your PGG data was saved. </strong></p>
+
+   {% if pred == 1 %}
+   Your condition looks great!
+   {% elif pred == 2 %}
+   <p style="color:red;"><strong>CAUTION! </strong> You may have left arm lymphedema. Please conduct your mdeical
+      provider.</p>
+   {% elif pred == 3 %}
+   <p style="color:red;"><strong>CAUTION! </strong> You may have right arm lymphedema. Please conduct your mdeical
+      provider.</p>
+   {% else %}
+   wrong
+   {% endif %}
+
+   <!-- <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>test</title>
           </head> -->
-          <!-- <body> -->
-         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-         {% autoescape off %}
-         {{ plot_html }}
-         {% endautoescape %}
+   <!-- <body> -->
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   {% autoescape off %}
+   {{ plot_html }}
+   {% endautoescape %}
 
-          <!-- </body> -->
-
-
-      {% endif %}
-
-      {% if not saved %}
-         <strong>
-             <div class="alert alert-warning">{{ message }}</div>
-         </strong>
-      {% endif %}
+   <!-- </body> -->
 
 
+   {% endif %}
 
-      <form action="{% url "uploadppg" %}">
-         <div style = "max-width:50px;">
-            <center>
-               <button type = "submit" value = "back" class="btn btn-light" >
-                  <strong>Back</strong>
-               </button>
-            </center>
-         </div>
-     </form>
-   <a  class="btn btn-light" href='{% url 'logout' %}'><strong>Logout</strong></a>
-   </body>
+   {% if not saved %}
+   <strong>
+      <div class="alert alert-warning">{{ message }}</div>
+   </strong>
+   {% endif %}
+
+
+
+   <form action={% url "uploadppg" %}>
+      <div style="max-width:50px;">
+         <center>
+            <button type="submit" value="back" class="btn btn-light">
+               <strong>Back</strong>
+            </button>
+         </center>
+      </div>
+   </form>
+   <a class="btn btn-light" href={% url "logout" %}><strong>Logout</strong></a>
+</body>
+
 </html>
