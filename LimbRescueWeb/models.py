@@ -1,25 +1,26 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
+
 from .utils import OverwriteStorage
 
 
 class User(models.Model):
     gender = (
-        ('male', "Male"),
-        ('female', "Female"),
+        ("male", "Male"),
+        ("female", "Female"),
     )
 
     name = models.CharField(max_length=128, unique=True)
     password = models.CharField(max_length=256)
     email = models.EmailField(unique=True)
-    sex = models.CharField(max_length=32, choices=gender, default='male')
+    sex = models.CharField(max_length=32, choices=gender, default="male")
 
     def __str__(self):
         return self.name
 
     class Meta:
-        verbose_name = 'Username'
-        verbose_name_plural = 'Username'
+        verbose_name = "Username"
+        verbose_name_plural = "Username"
 
 
 def get_user_path(instance, filename):

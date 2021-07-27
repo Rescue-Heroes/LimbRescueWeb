@@ -1,10 +1,10 @@
 import os
-import numpy as np
-import plotly.offline as plo
-import plotly.graph_objs as go
 
-from django.core.files.storage import FileSystemStorage
+import numpy as np
+import plotly.graph_objs as go
+import plotly.offline as plo
 from django.conf import settings
+from django.core.files.storage import FileSystemStorage
 
 
 def process_csv(file):
@@ -22,9 +22,13 @@ def plot(file):
     xs = np.array(xs)
     ys = np.array(ys)
     fig = go.Figure()
-    scatter = go.Scatter(x=(xs - xs[0]) / 1e9, y=ys, mode='lines', name='test', opacity=0.8, marker_color='green')
+    scatter = go.Scatter(
+        x=(xs - xs[0]) / 1e9, y=ys, mode="lines", name="test", opacity=0.8, marker_color="green"
+    )
     fig.add_trace(scatter)
-    plt_div = plo.plot(fig, output_type='div', include_plotlyjs=False, show_link=False, link_text="")
+    plt_div = plo.plot(
+        fig, output_type="div", include_plotlyjs=False, show_link=False, link_text=""
+    )
     return plt_div
 
 
