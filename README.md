@@ -26,13 +26,6 @@ The database is managed by Django itself and within the file directory, it is lo
 
 The application uses Plotly to graph data. The graph is shown after the user uploads a data file (CSV) with a respective name within the upload page.
 
-#### Implementation
-
-
-### History Screen
-
-TODO
-
 ## Installation
 
 Necessary packages to install before compilation: Plotly, Numpy, Django, Flask, Chatterbot. These can all be successfully installed by using a package handler such as pip or Conda. Be sure that your python version is up to date and compatible with the version of python Django is using. 
