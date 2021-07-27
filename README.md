@@ -11,11 +11,11 @@ Lynne Brophy, MSN, RN-BC, ARPN-CNS, AOCN
 Carlo Contreras, MD, FASC
 
 ## Project Mission
-Develop a user friendly web application that allows patients/doctors to create an account, upload data, and identify a diagnois. The web application will facilitate a home based monitoring protocol for patients to monitor and track their lymphedema recordings.
+Develop a user-friendly web application that allows patients/doctors to create an account, upload data, and identify a diagnosis. The web application will facilitate a home-based monitoring protocol for patients to monitor and track their lymphedema recordings.
 ## Application Components
 
 ### Database
-The database is managed by Django itself and within the file directory it is located in the settings.py file. Be sure to familiarize yourself with this SQL Database and understand that the users and adminds are independent of each other.
+The database is managed by Django itself and within the file directory, it is located in the settings.py file. Be sure to familiarize yourself with this SQL Database and understand that the users and admins are independent of each other.
 
 ### Graph
 
@@ -30,7 +30,7 @@ TODO
 
 ## Installation
 
-Necessary packages to install before compilation: Plotly, Numpy, Django, Flask, Chatterbot. These can all be successfully installed by using a package handler such as pip or conda. Be sure that your python version is up to date and compatible with the version of python Django is using. 
+Necessary packages to install before compilation: Plotly, Numpy, Django, Flask, Chatterbot. These can all be successfully installed by using a package handler such as pip or Conda. Be sure that your python version is up to date and compatible with the version of python Django is using. 
 
 ### Web App
 
