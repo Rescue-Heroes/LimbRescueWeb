@@ -1,7 +1,7 @@
 # Project Limb Rescue Web Application
 
 Technical Team:
-Tai-Yu Pan (Worked on Plotly graph functionality)
+Tai-Yu Pan (Worked on file uploading functionality)
 Mengdi Fan (Worked on Plotly graph functionality)
 Rithvich Ramesh (Worked on sitewide styling)
 Browy Li (Worked on user authentication and messaging system)
